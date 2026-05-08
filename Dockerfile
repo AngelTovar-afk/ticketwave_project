@@ -3,7 +3,7 @@
 # Imagen de desarrollo local (no es la de producción)
 # ─────────────────────────────────────────────────────────────────────────────
 
-FROM php:8.3-fpm
+FROM php:8.4-fpm
 
 # ─── Variables de construcción ───────────────────────────────────────────────
 ARG user=ticketwave
@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     libzip-dev \
+    libicu-dev \
     zip \
     unzip \
     && apt-get clean \
@@ -30,7 +31,8 @@ RUN docker-php-ext-install \
     pcntl \
     bcmath \
     gd \
-    zip
+    zip \
+    intl
 
 # ─── Composer ────────────────────────────────────────────────────────────────
 COPY --from=composer:2.7 /usr/bin/composer /usr/bin/composer
