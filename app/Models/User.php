@@ -35,4 +35,13 @@ class User extends Authenticatable implements FilamentUser
     {
         return true;
     }
+    public function eventos()
+    {
+        return $this->hasMany(Evento::class, 'usuario_id');
+    }
+
+    public function pedidos()
+    {
+        return $this->hasMany(Pedido::class, 'usuario_id');
+    }
 }
