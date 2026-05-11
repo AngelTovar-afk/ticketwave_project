@@ -17,4 +17,18 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Rutas solo para admin
+Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return 'Panel de administración';
+    })->name('admin.index');
+});
+
+// Rutas solo para organizador
+Route::middleware(['auth', 'verified', 'role:organizador'])->prefix('organizador')->group(function () {
+    Route::get('/', function () {
+        return 'Panel de organizador';
+    })->name('organizador.index');
+});
+
 require __DIR__.'/auth.php';
