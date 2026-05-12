@@ -15,6 +15,7 @@ class User extends Authenticatable implements FilamentUser
     protected $fillable = [
         'name',
         'email',
+        'rol',
         'password',
     ];
 
@@ -33,8 +34,26 @@ class User extends Authenticatable implements FilamentUser
 
     public function canAccessPanel(Panel $panel): bool
     {
-        return true;
+        return $this->isAdmin();
     }
+
+    // Métodos helper de roles
+    public function isAdmin(): bool
+    {
+        return $this->rol === 'admin';
+    }
+
+    public function isOrganizador(): bool
+    {
+        return $this->rol === 'organizador';
+    }
+
+    public function isComprador(): bool
+    {
+        return $this->rol === 'comprador';
+    }
+
+    // Relaciones
     public function eventos()
     {
         return $this->hasMany(Evento::class, 'usuario_id');
