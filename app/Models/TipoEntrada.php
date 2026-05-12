@@ -11,10 +11,10 @@ class TipoEntrada extends Model
 
     protected $table = 'tipos_entrada';
 
-    protected $fillable = [
-        'evento_id', 'nombre', 'descripcion',
-        'disponibles', 'precio', 'limite_por_compra',
-    ];
+   protected $fillable = [
+    'evento_id', 'nombre', 'descripcion',
+    'disponibles', 'vendidas', 'precio', 'limite_por_compra',
+];
 
     protected $casts = [
         'precio' => 'decimal:2',
