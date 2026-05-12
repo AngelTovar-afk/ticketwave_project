@@ -18,7 +18,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 });
 
 // Rutas solo para admin
-Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin')->group(function () {
+Route::middleware(['auth', 'verified', 'role:admin'])->prefix('admin-panel')->group(function () {
     Route::get('/', function () {
         return 'Panel de administración';
     })->name('admin.index');
