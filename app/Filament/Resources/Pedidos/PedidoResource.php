@@ -45,6 +45,11 @@ class PedidoResource extends Resource
         return [];
     }
 
+
+    public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
+{
+    return parent::getEloquentQuery()->with(['usuario', 'pago', 'items.tipoEntrada']);
+}
     public static function getPages(): array
     {
         return [

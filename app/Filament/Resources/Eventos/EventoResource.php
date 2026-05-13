@@ -34,17 +34,20 @@ class EventoResource extends Resource
 
     public static function getRelations(): array
     {
-        return [
-            //
-        ];
+        return [];
+    }
+
+    public static function getEloquentQuery(): \Illuminate\Database\Eloquent\Builder
+    {
+        return parent::getEloquentQuery()->with(['recinto', 'usuario', 'tiposEntrada']);
     }
 
     public static function getPages(): array
     {
         return [
-            'index' => ListEventos::route('/'),
+            'index'  => ListEventos::route('/'),
             'create' => CreateEvento::route('/create'),
-            'edit' => EditEvento::route('/{record}/edit'),
+            'edit'   => EditEvento::route('/{record}/edit'),
         ];
     }
 }
