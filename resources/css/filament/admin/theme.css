@@ -20,29 +20,26 @@
 }
 
 .fi-brand-name {
-    color: #6ee7b7 !important;
-    font-weight: 800 !important;
-}
-.bg-green-400 { background-color: #4ade80 !important; }
-.bg-yellow-400 { background-color: #facc15 !important; }
-.bg-red-400 { background-color: #f87171 !important; }
-.bg-gray-400 { background-color: #9ca3af !important; }
-.text-green-400 { color: #4ade80 !important; }
-.text-yellow-400 { color: #facc15 !important; }
-.text-red-400 { color: #f87171 !important; }
-.text-gray-400 { color: #9ca3af !important; }
-.text-white { color: #ffffff !important; }
-.divide-y > * + * { border-top: 1px solid rgba(255,255,255,0.05) !important; }
-
-.fi-brand-name {
     color: white !important;
     font-weight: 800 !important;
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
 }
 
 .fi-brand-name::first-letter {
     color: #6ee7b7 !important;
 }
+
+.bg-green-400  { background-color: #4ade80 !important; }
+.bg-yellow-400 { background-color: #facc15 !important; }
+.bg-red-400    { background-color: #f87171 !important; }
+.bg-gray-400   { background-color: #9ca3af !important; }
+.text-green-400  { color: #4ade80 !important; }
+.text-yellow-400 { color: #facc15 !important; }
+.text-red-400    { color: #f87171 !important; }
+.text-gray-400   { color: #9ca3af !important; }
+.text-white      { color: #ffffff !important; }
+
+.divide-y > * + * { border-top: 1px solid rgba(255,255,255,0.05) !important; }
 
 .fi-global-search-field input {
     background-color: #0f2d26 !important;
@@ -54,26 +51,18 @@
     color: #7db89a !important;
 }
 
-.fi-brand-name {
-    font-size: 1.5rem !important;
-    font-weight: 800 !important;
-}
-
 .fi-topbar {
     background-color: #0f2d26 !important;
 }
 
 .fi-sidebar-header {
     background-color: #0f2d26 !important;
+    padding: 1.25rem 1.5rem !important;
 }
 
 .fi-brand-logo {
     height: auto !important;
     max-height: none !important;
-}
-
-.fi-sidebar-header {
-    padding: 1.25rem 1.5rem !important;
 }
 
 .fi-wi-table-widget,
