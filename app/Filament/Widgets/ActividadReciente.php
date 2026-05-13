@@ -9,8 +9,14 @@ class ActividadReciente extends Widget
 {
     protected static ?string $heading = 'Actividad reciente';
     protected string $view = 'filament.widgets.actividad-reciente';
-    protected int|string|array $columnSpan = 1;
     protected static ?int $sort = 3;
+
+    protected int|string|array $columnSpan = [
+        'sm'  => 1,
+        'md'  => 1,
+        'xl'  => 1,
+        '2xl' => 1,
+    ];
 
     public function getPedidos()
     {

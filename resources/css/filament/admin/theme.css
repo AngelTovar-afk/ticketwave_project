@@ -101,3 +101,15 @@
     color: white !important;
     font-weight: 700 !important;
 }
+/* Forzar layout 2+1 en la segunda fila de widgets */
+.fi-wi-stats-overview {
+    grid-column: span 3 !important;
+}
+
+.fi-wi-table-widget {
+    grid-column: span 2 !important;
+}
+
+.fi-wi-custom {
+    grid-column: span 1 !important;
+}

@@ -2,10 +2,30 @@
 
 namespace App\Filament\Pages;
 
-class Dashboard extends \Filament\Pages\Dashboard
+use App\Filament\Widgets\ActividadReciente;
+use App\Filament\Widgets\EventosRecientes;
+use App\Filament\Widgets\StatsOverview;
+use Filament\Pages\Dashboard as BaseDashboard;
+use Filament\Widgets\AccountWidget;
+
+class Dashboard extends BaseDashboard
 {
-    public function getColumns(): int | array
+    public function getColumns(): int|array
     {
-        return 4;
+        return 3;
+    }
+
+    public function getWidgets(): array
+    {
+        return [
+            StatsOverview::class,
+            EventosRecientes::class,
+            ActividadReciente::class,
+        ];
+    }
+
+    public function getVisibleWidgets(): array
+    {
+        return $this->filterVisibleWidgets($this->getWidgets());
     }
 }
