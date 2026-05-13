@@ -50,7 +50,10 @@ class AdminPanelProvider extends PanelProvider
             ->pages([
                 \App\Filament\Pages\Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
+            ->discoverWidgets(
+                in: app_path('Filament/Widgets'),
+                for: 'App\\Filament\\Widgets'
+            )
             ->widgets([
                 StatsOverview::class,
                 EventosRecientes::class,
@@ -67,37 +70,31 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('heroicon-o-home')
                     ->group('Principal')
                     ->sort(1),
-
                 NavigationItem::make('Eventos')
                     ->url('/admin/eventos')
                     ->icon('heroicon-o-calendar')
                     ->group('Principal')
                     ->sort(2),
-
                 NavigationItem::make('Boletos')
                     ->url('/admin/boletos')
                     ->icon('heroicon-o-ticket')
                     ->group('Principal')
                     ->sort(3),
-
                 NavigationItem::make('Usuarios')
                     ->url('/admin/usuarios')
                     ->icon('heroicon-o-users')
                     ->group('Principal')
                     ->sort(4),
-
                 NavigationItem::make('Reportes')
                     ->url('/admin/reportes')
                     ->icon('heroicon-o-chart-bar')
                     ->group('Finanzas')
                     ->sort(5),
-
                 NavigationItem::make('Pagos')
                     ->url('/admin/pagos')
                     ->icon('heroicon-o-credit-card')
                     ->group('Finanzas')
                     ->sort(6),
-
                 NavigationItem::make('Ajustes')
                     ->url('/admin/ajustes')
                     ->icon('heroicon-o-cog-6-tooth')

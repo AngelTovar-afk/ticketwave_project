@@ -106,8 +106,7 @@
         <div style="position: fixed; inset: 0; z-index: 1; background: rgba(0,0,0,0.55);"></div>
 
         {{-- CONTENIDO PRINCIPAL --}}
-        <div style="position: relative; z-index: 2; width: 100%; max-width: 680px; background-color: rgba(15,45,38,0.85); backdrop-filter: blur(8px); border-radius: 1.5rem; padding: 3.5rem 4rem; box-shadow: 0 25px 50px rgba(0,0,0,0.5);">
-            {{ $slot }}
+<div style="position: relative; z-index: 2; width: 100%; max-width: 420px; background-color: rgba(15,45,38,0.85); backdrop-filter: blur(8px); border-radius: 1.5rem; padding: 2.5rem 2.5rem; box-shadow: 0 25px 50px rgba(0,0,0,0.5);">            {{ $slot }}
         </div>
 
         {{-- BOTÓN DE AYUDA --}}
