@@ -1,0 +1,114 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+.fi-sidebar {
+    background-color: #0f2d26 !important;
+    border-right: 1px solid #1e4a3a !important;
+}
+
+.fi-topbar nav {
+    background-color: #0f2d26 !important;
+    border-bottom: 1px solid #1e4a3a !important;
+}
+
+.fi-main {
+    background-color: #0a1f1a !important;
+}
+
+.fi-wi-stats-overview-stat {
+    background-color: #0f2d26 !important;
+    border: 1px solid #1e4a3a !important;
+}
+
+.fi-brand-name {
+    color: #6ee7b7 !important;
+    font-weight: 800 !important;
+}
+.bg-green-400 { background-color: #4ade80 !important; }
+.bg-yellow-400 { background-color: #facc15 !important; }
+.bg-red-400 { background-color: #f87171 !important; }
+.bg-gray-400 { background-color: #9ca3af !important; }
+.text-green-400 { color: #4ade80 !important; }
+.text-yellow-400 { color: #facc15 !important; }
+.text-red-400 { color: #f87171 !important; }
+.text-gray-400 { color: #9ca3af !important; }
+.text-white { color: #ffffff !important; }
+.divide-y > * + * { border-top: 1px solid rgba(255,255,255,0.05) !important; }
+
+.fi-brand-name {
+    color: white !important;
+    font-weight: 800 !important;
+    font-size: 1.4rem !important;
+}
+
+.fi-brand-name::first-letter {
+    color: #6ee7b7 !important;
+}
+
+.fi-global-search-field input {
+    background-color: #0f2d26 !important;
+    border: 1px solid #1e4a3a !important;
+    color: white !important;
+}
+
+.fi-global-search-field input::placeholder {
+    color: #7db89a !important;
+}
+
+.fi-brand-name {
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+}
+
+.fi-topbar {
+    background-color: #0f2d26 !important;
+}
+
+.fi-sidebar-header {
+    background-color: #0f2d26 !important;
+}
+
+.fi-brand-logo {
+    height: auto !important;
+    max-height: none !important;
+}
+
+.fi-sidebar-header {
+    padding: 1.25rem 1.5rem !important;
+}
+
+.fi-wi-table-widget,
+.fi-wi-custom {
+    background-color: #0a1f1a !important;
+    border: 1px solid #1e4a3a !important;
+    border-radius: 0.75rem !important;
+}
+
+.fi-ta-header-cell {
+    background-color: #0a1f1a !important;
+    color: #7db89a !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+}
+
+.fi-ta-row:hover td {
+    background-color: rgba(110,231,183,0.03) !important;
+}
+
+.fi-ta-cell {
+    border-bottom: 1px solid rgba(30,74,58,0.5) !important;
+}
+
+.fi-section {
+    background-color: #0f2d26 !important;
+    border: 1px solid #1e4a3a !important;
+}
+
+.fi-section-header {
+    border-bottom: 1px solid #1e4a3a !important;
+}
+
+.fi-section-header-heading {
+    color: white !important;
+    font-weight: 700 !important;
+}
